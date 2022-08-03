@@ -195,7 +195,6 @@ img {
 
   border-radius: 2px;
   background-color: var(--blue-style-color);
-
 }
 
 .header-contacts-link {
@@ -609,4 +608,55 @@ img {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
+}
+
+/* Modal window */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-style-color);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backdrop.is-hidden {
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+}
+
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
 }
